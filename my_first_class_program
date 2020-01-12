@@ -1,0 +1,24 @@
+class Cars():
+	def __init__(self, make, model):
+		self.make=make
+		self.model=model
+
+	def print_car_info(self):
+		print('my car is ' + self.make.title() + ' ' + self.model.title())
+
+class ConvertibleCars(Cars):
+	def __init__(self, make, model, top_type):
+
+		super().__init__(make, model)
+		self.top_type=top_type
+
+	def print_top_type(self):
+		if self.top_type in ('soft', 'hard'):
+			print('It is a ' + self.top_type + ' top convertible')
+		else:
+			print("and it's not a convertible")
+
+
+my_car=ConvertibleCars('subaru', 'impreza', 'abc')
+my_car.print_car_info()
+my_car.print_top_type()

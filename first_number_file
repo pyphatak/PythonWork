@@ -1,0 +1,21 @@
+
+#million_numbers = range(1, 1000001)
+#for number in million_numbers:
+	#print(number)
+#print("smallest number in the ist is " + str(min(million_numbers)))
+#print(max(million_numbers))
+#print(sum(million_numbers))
+
+#odd_numbers=list(range(1, 20, 2))
+#for number in odd_numbers:
+#	print(number)
+
+#multiples_of_three = list(range(3, 30, 3))
+#for multiple_of_three in multiples_of_three:
+#	print(multiple_of_three)
+
+#cube_list = []
+#for number in range(1,11):
+#	cube_list.append(number**3)
+cube_list = [number**3 for number in range(1,11)]
+print(cube_list[0:3])

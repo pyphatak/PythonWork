@@ -1,0 +1,5 @@
+#first program using dictionary
+person1_dictionary = {'name':'Prashant', 'hobby':'cricket', 'name':'ajanta'}
+print(person1_dictionary)
+del person1_dictionary['name']
+print(person1_dictionary)

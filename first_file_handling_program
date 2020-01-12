@@ -1,0 +1,34 @@
+with open('/Users/ajantaphatak/downloads/guestlist.csv') as guest_list_file_object:
+	content=guest_list_file_object.read()
+
+#print(content)
+
+with open('/Users/ajantaphatak/downloads/guestlist.csv', 'r') as guest_list_file_object:
+	lines=guest_list_file_object.readlines()
+
+for line in lines:
+	print(line.strip())
+print(len(lines))
+
+with open('/Users/ajantaphatak/downloads/guestlist.csv', 'w') as guest_list_file_object:
+	guest_list_file_object.write('newname2, newemailaddress2\n')
+	guest_list_file_object.write('abcd')
+
+#with open('/Users/ajantaphatak/downloads/guestlist.csv', 'w') as guest_list_file_object:
+#	guest_list_file_object.write('newname, newemailaddress\n')
+
+with open('/Users/ajantaphatak/downloads/guestlist.csv', 'r') as guest_list_file_object:
+	lines=guest_list_file_object.readlines()
+
+lines.reverse()
+
+#lastline=lines.pop()
+for line in lines:
+	if 'address' in line:
+		print(line.strip())
+	else:
+		print("line does not contain the word address")
+
+lines.reverse()
+print(len(lines))
+
